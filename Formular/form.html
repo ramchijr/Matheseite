@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Formular</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"-->
+    <!--          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-formular">
+            <h1 class="titel">Formular</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Registriere dich</h2>
+            <div class="form-control">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" placeholder="zB. Alexander" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" placeholder="zB. Müller" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="geburtsdatum">Geburtsdatum</label>
+                <input type="text" id="geburtsdatum" placeholder="tt/mm/yy" min="1922-01-01" max="2022-08-01" required />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="telefonnummer">Telefonnummer</label>
+                <input type="tel" id="telefonnummer" placeholder="zB. 079 134 89 98" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="zB. admin@schweiz.ch" />
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="passwort">Passwort</label>
+                <input type="password" id="passwort" placeholder="zB. aSwqc291" />
+                <small>Error message</small>
+            </div>
+
+            <button type="submit" onclick="validateInputs()">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="js/validate-input.js" charset="utf-8"></script>
+</body>
+</html>

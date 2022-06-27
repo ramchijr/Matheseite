@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Startseite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" charset="uft-8">
+    <script src="js/Calculator.js" charset="utf-8"></script>
+</head>
+<body onload="load();">
+    <header>
+        <div id="brand">
+            <img src="bilder/mathe.png" alt="icon"/>
+            <h1>
+                Noten ausrechnen
+                <small>leicht gemacht</small>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Informationsdaten/daten.html" target="_self">Informationsdaten</a>
+                </li>
+                <li>
+                    <a href="../Formular/form.html" target="_self">Formular</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="taschenrechner">
+            <div>
+                <h1 class="titel">Wie berechne ich meine Note?</h1>
+                <p>Das ist eigentlich ganz einfach. Man nimmt die erreichte Punktzahl und <br>
+                rechnet diese mal 5. Danach dividiert man das erhaltene Ergebnis durch die <br>
+                maximal erreichbare Punktzahl. Das daraus entstandene Ergebnis addiert man <br>
+                jetzt mit der Zahl 1 und man erhält seine Note.</p>
+            </div>
+            <div class="interface">
+                <div id="equation" class="anzeige"></div>
+                <div id="display" class="anzeige"></div>
+                <div id="keyboard">
+                    <div class="btn" onclick="ce();">CE</div>
+                    <div class="btn" onclick="c();">C</div>
+                    <div class="btn" onclick="remove_something();">del</div>
+                    <div class="btn" onclick="divide();">&divide;</div>
+                    <div class="btn" onclick="number(7);">7</div>
+                    <div class="btn" onclick="number(8);">8</div>
+                    <div class="btn" onclick="number(9);">9</div>
+                    <div class="btn" onclick="mult();">&times;</div>
+                    <div class="btn" onclick="number(4);">4</div>
+                    <div class="btn" onclick="number(5);">5</div>
+                    <div class="btn" onclick="number(6);">6</div>
+                    <div class="btn" onclick="sub();">-</div>
+                    <div class="btn" onclick="number(1);">1</div>
+                    <div class="btn" onclick="number(2);">2</div>
+                    <div class="btn" onclick="number(3);">3</div>
+                    <div class="btn" onclick="add();">+</div>
+                    <div class="btn" onclick="invert();">&plusmn;</div>
+                    <div class="btn" onclick="number(0);">0</div>
+                    <div class="btn" onclick="dot();">.</div>
+                    <div class="btn" onclick="result();">=</div>
+                </div>
+            </div>
+        </section>
+        <section id="tippcontainer">
+            <div id="tipps">
+                <h2>Schlechte Note? Was tun?<br>
+                    <small>Keine Sorge! Nichts ist verloren...</small>
+                </h2>
+                <p>Ja, Schule macht nicht immer Spaß. Oft ist der Unterricht langweilig und man fragt sich andauernd: <br>
+                    Wozu brauche ich das im Leben? Doch in der Schulzeit legst du die Weichen für deine Zukunft –<br>
+                    und mit ein wenig Motivation und positivem Denken sieht der Schulalltag nicht mehr ganz so grau aus.<br>
+                    Es folgen 4 Tipps, wie du deine Noten verbessern kannst.
+                </p>
+                <h3>Believe in yourself!</h3>
+                <p>Eine Schlechte Note bedeutet nicht gleich, dass du schlecht in der Schule bist.<br>
+                Glaube an dich und mache es beim nächsten Test besser.</p>
+                <h3>Fight</h3>
+                <p>Du kannst gute Noten nur bekommen, wenn du dafür kämpfst.<br>
+                   Du kannst nicht erfolgreich sein, indem du dich zurücklehnst und alles im <br>
+                    letzten Moment machst. Doch wenn du hart arbeitest, kann dich niemand stoppen.</p>
+                <h3>Overcome your laziness!</h3>
+                <p>Faulheit ist nur ein Gefühl, welches sich überwinden lässt.<br>
+                   Sobald sich etwas anstrengend anfühlt, solltest du dir sagen:<br>
+                   Das ist nur vorübergehend. Ich werde nicht zulassen, dass es meine Zukunft zerstört.</p>
+                <h3>Make a plan!</h3>
+                <p>Ein guter Plan reduziert Stress und lässt dir Zeit für Vergnügen. <br>
+                   Schreib deinen Plan auf, aktualisiere ihn laufend und leg ihn so hin, dass du ihn immer siehst.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Erstellt von Alex und David</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.bzz.ch/" target="_blank">BZZ Webseite</a>
+                </li>
+                <li>
+                    <a href="http://ict.bzzlab.ch/index.php?clear=all" target="_blank">BZZ Lab Webseite</a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

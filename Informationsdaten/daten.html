@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Informationsdaten</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" charset="uft-8">
+
+</head>
+
+<body>
+    <header>
+        <div id="brand">
+            <img src="../Startseite/bilder/mathe.png" alt="icon"/>
+            <h1>
+                Noten ausrechnen
+                <small>leicht gemacht</small>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Startseite/index.html" target="_self">Startseite</a>
+                </li>
+                <li>
+                    <a href="../Formular/form.html" target="_self">Formular</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Inhalt -->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="titel">Informationsdaten</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+
+        <!-- Output Mathematikstudierende -->
+        <div class="output">
+            <div class="row ">
+                <iv class="col-sm">
+                    <div class="card bg-c-t" style="width: 25rem;">
+                        <div class="card-header">Mathematikstudierende</div>
+                        <ul class="list-group list-group-flush">
+                            <li id="identification" class="list-group-item">?</li>
+                        </ul>
+                    </div>
+                </iv>
+                <div style="margin-bottom: 1.5rem"></div>
+                <div class="second">
+                    <div class="col-sm">
+                        <div class="card bg-c-t" style="width: 25rem;">
+                            <div class="card-header">Ausbildungsstand</div>
+                            <ul class="list-group list-group-flush">
+                                <li id="ausbildung" class="list-group-item">?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Output Lieblingsthemen -->
+
+            <div class="puffer"></div>
+            <div class="row lieblingsthemen">
+                <div class="col-sm">
+                    <div class="card bg-c-t" style="width: 25rem;">
+                        <div class="card-header">Lieblingsthemen</div>
+                        <ul class="list-group list-group-flush">
+                            <li id="lieblingsthemen" class="list-group-item">?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="col-sm">
+                        <div class="card bg-c-t" style="width: 25rem;">
+                            <div id="allgemeinTitle" class="card-header">()</div>
+                            <ul class="list-group list-group-flush">
+                                <li id="allgemein" class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div style="margin-bottom: 2rem"></div>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul id="pagination" class="pagination">
+                <li class="page-item">
+                    <a class="page-link button" onclick="showPrevious()"
+                        href="#">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link button" onclick="showNext()" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <footer>
+        <div>Erstellt von Alex und David</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.bzz.ch/" target="_blank">BZZ Webseite</a>
+                </li>
+                <li>
+                    <a href="http://ict.bzzlab.ch/index.php?clear=all" target="_blank">BZZ Lab Webseite</a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
