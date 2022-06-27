@@ -11,52 +11,70 @@
     <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
+<header>
+    <div class="navi">
+        <a href="#" onclick="history.back(-1)" target="_blank">Zurück<a/>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-formular">
+                <h1 class="titel">Formular</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+        <div class="container">
+            <form id="form" class="form">
+                <h2>Registriere dich</h2>
+                <div class="form-control">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" placeholder="zB. Alexander" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" placeholder="zB. Müller" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="geburtsdatum">Geburtsdatum</label>
+                    <input type="text" id="geburtsdatum" placeholder="tt/mm/yy" min="1922-01-01" max="2022-08-01" required />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="tel" id="telefonnummer" placeholder="zB. 0791348998" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="zB. admin@schweiz.ch" />
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="passwort">Passwort</label>
+                    <input type="password" id="passwort" placeholder="zB. aSwqc291" />
+                    <small>Error message</small>
+                </div>
 
-<div class="container">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container-formular">
-            <h1 class="titel">Formular</h1>
-            <p class="lead"></p>
+                <button type="submit" onclick="validateInputs()">Submit</button>
+            </form>
         </div>
     </div>
-    <div class="container">
-        <form id="form" class="form">
-            <h2>Registriere dich</h2>
-            <div class="form-control">
-                <label for="vorname">Vorname</label>
-                <input type="text" id="vorname" placeholder="zB. Alexander" />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label for="nachname">Nachname</label>
-                <input type="text" id="nachname" placeholder="zB. Müller" />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label for="geburtsdatum">Geburtsdatum</label>
-                <input type="text" id="geburtsdatum" placeholder="tt/mm/yy" min="1922-01-01" max="2022-08-01" required />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label for="telefonnummer">Telefonnummer</label>
-                <input type="tel" id="telefonnummer" placeholder="zB. 0791348998" />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="zB. admin@schweiz.ch" />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label for="passwort">Passwort</label>
-                <input type="password" id="passwort" placeholder="zB. aSwqc291" />
-                <small>Error message</small>
-            </div>
-
-            <button type="submit" onclick="validateInputs()">Submit</button>
-        </form>
-    </div>
-</div>
 <script src="js/validate-input.js" charset="utf-8"></script>
+</main>
+<footer>
+    <div>Erstellt von Alex und David</div>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://www.bzz.ch/" target="_blank">BZZ Webseite</a>
+            </li>
+            <li>
+                <a href="http://ict.bzzlab.ch/index.php?clear=all" target="_blank">BZZ Lab Webseite</a>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>
