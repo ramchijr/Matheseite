@@ -36,7 +36,7 @@ function showSuccess(input) {
 // Check required fields
 function checkRequired(inputArr) {
     let isRequired = false;
-    inputArr.forEach(function(input) {
+    inputArr.forEach(function (input) {
         if (input.value.trim() === '') {
             showError(input, `${getFieldName(input)} is required`);
             isRequired = true;
@@ -138,7 +138,9 @@ function validateForm() {
     checkEmail(email);
     checkDate(geburtsdatum);
 }
+
 function validateInputs() {
     if (!checkRequired([vorname, nachname, email, telefonnummer, passwort, geburtsdatum])) {
         validateForm();
-    }}
+    }
+}
